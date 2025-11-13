@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Web site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!--logo y menus-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="auto" width="80" src="imagenes/chefsito.png" alt="LogoChef" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href=""> Inicio </a></li>
+
+        <li>
+          <a href=""> Recetas </a>
+          <ul class="Menu-Vertical">
+            <li><a href=""> Recetas nuevas </a></li>
+            <li><a href=""> Recetas famosas </a></li>
+            <li><a href=""> Lista de Recetas </a></li>
+            <li><a href=""> Recomendación de recetas </a></li>
+          </ul>
+        </li>
+
+        <li><a href=""> Ayuda</a></li>
+        <li><a href=""> Perfil </a></li>
+      </ul>
+    </nav>
+
+    <!--Seccion Inicio-->
+    <section class="seccion-inicio">
+      <div class="div-general-inicio">
+        <div class="div-inicio-texto">
+
+          <h1>¡Encuentra tu próxima receta favorita!</h1>
+          <p>Explora recetas únicas, guarda tus favoritas y descubre nuevas formas de cocinar 
+            cada día. Una experiencia simple, visual y pensada para inspirarte.
+          </p>
+          <p>Descubre, organiza y comparte tus recetas favoritas de manera sencilla 
+            y visual. Nuestra plataforma te permite explorar una amplia variedad de 
+            platos, desde los más populares hasta los más recientes, todo en un 
+            solo lugar.
+          </p>
+          
+        </div>
+        <div class="div-inicio-imagen">
+          <img src="imagenes/receta 3.jpg"/> 
+        </div>
+      </div>
+
+<!--Seccion Recetas-->
+<section class="seccion-recetas">
+  <div class="div-general-recetas">
+    <div class="div-recetas-texto">
+
+      <h1>Recetas populares</h1>
+      <p>
+        Usa nuestro buscador para descubrir platos según tus gustos. Filtra por ingredientes, categorías o popularidad y deja que la inspiración llegue a tu cocina.
+      </p>
+
+      <p>
+        Explora las recetas más destacadas del momento. Aquí verás lo que la comunidad ama y recomienda, para que nunca te falte una buena idea para preparar.
+      </p>
+      
+    </div>
+    <div class="div-recetas-video">
+      <iframe 
+        width="560"
+        height="315" 
+        src="https://www.youtube.com/embed/lrIeHCuJOj0?si=eHa-m29A9eENVgji" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!--FORMULARIO-->
+<section class="seccion-banca">
+  <div>
+    <section class="seccion-formulario">
+      <div class="div-contacto-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form class="formulario">
+          <!-- LABEL/INPUT -->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" />
+          </div>
+
+          <!-- por mi, direccion -->
+          <div class="campo">
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion" />
+          </div>
+
+          <!-- MENU DESPLEGABLE -->
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione país</option>
+              <option value="peru">Perú</option>
+              <option value="argentina">Argentina</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="chile">Chile</option>
+            </select>
+          </div>
+
+          <!-- CHECKBOX -->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li><label><input type="checkbox" name="intereses" value="inglesa" />Comida Inglesa</label></li>
+              <li><label><input type="checkbox" name="intereses" value="francesa" />Comida Francesa</label></li>
+              <li><label><input type="checkbox" name="intereses" value="italiana" />Comida Italiana</label></li>
+              <li><label><input type="checkbox" name="intereses" value="asiatica" />Comida Asiática</label></li>
+              <li><label><input type="checkbox" name="intereses" value="peruana" />Comida Peruana</label></li>
+              <li>
+                <label><input type="checkbox" name="intereses" value="otra" />Otra:</label>
+                <input type="text" id="otra" name="otra" placeholder="Escriba cuál" />
+              </li>
+            </ul>
+          </div>
+
+          <!-- RADIO -->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="sexo" value="masculino" />Masculino</label></li>
+              <li><label><input type="radio" name="sexo" value="femenino" />Femenino</label></li>
+              <li><label><input type="radio" name="sexo" value="no-preferencia" />Prefiero no decirlo</label></li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</section>
+
+  <!-- PIE DE PAGINA -->
+
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre de sitio -->
+        <div class="footer-brand">
+          <img
+            src="imagenes/logopiecheff.webp"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>CookEasy</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <!-- Dentro de href llama a un documento pdf con la poltica-->
+          <a href="Documentos/obtenerDocumento.pdf" target="_blank">Términos y Condiciones</a>
+          <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+          <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Redes sociales con íconos personalizados -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  </body>
+</html>
