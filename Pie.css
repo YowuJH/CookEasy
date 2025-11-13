@@ -40,6 +40,22 @@
   min-width: 12.5rem;
 }
 
+.Ayuda-Doc {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.Ayuda-Doc a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.Ayuda-Doc a:hover {
+  color: #fff;
+}
+
 .footer-links a {
   display: block;
   color: #ccc;
