@@ -4,14 +4,14 @@ function validarLogin(event) {
   event.preventDefault();
 
   // Clave estática para la demo
-  const CLAVE_SECRETA = "ok";
+  const CLAVE_SECRETA = "ok123";
   const passwordInput = document.getElementById("password").value;
 
   // 2. Realizar la verificación
   if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
     alert("¡Acceso concedido! Bienvenido.");
     // Redirige a tu página principal
-    window.location.href = "LP.html";
+    window.location.href = "landingpage.html";
   } else {
     alert("Clave incorrecta. Inténtalo de nuevo.");
     document.getElementById("password").value = "";
