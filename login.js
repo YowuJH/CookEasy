@@ -1,6 +1,6 @@
 // La función que maneja la lógica de inicio de sesión
 function validarLogin(event) {
-  // Previene el envío del formulario por defecto (evita la recarga)
+  // reviene el envío del formulario por defecto (evita la recarga)
   event.preventDefault();
 
   // Clave estática para la demo
