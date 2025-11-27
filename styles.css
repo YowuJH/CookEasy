@@ -49,9 +49,6 @@ body {
   padding: 0.938rem 0.938rem 0.938rem 1.25rem; /* arriba, derecha, abajo, izquierda */
 }
 
-.logo {
-}
-
 /* SECCION INICIO */
 
 .seccion-inicio {
@@ -211,4 +208,40 @@ button {
   padding: 0.625rem 1.25rem;
   border-radius: 0.313rem;
   cursor: pointer;
+}
+
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+    color: black;
+  }
+
+  .Menu-Horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 2rem solid #ccc; /* Líneas separadoras */
+  }
 }
