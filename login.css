@@ -14,7 +14,7 @@
 .login-box {
   display: flex; /* lo hace en fila */
   flex-direction: row; /* Lado a lado */
-  gap: 2rem; /* Separación entre columnas */
+  gap: 3rem; /* Separación entre columnas */
   background: white;
   padding: 2.5rem; /* 40px */
   border-radius: 0.625rem; /* 10px */
@@ -78,11 +78,11 @@
 /* Mio */
 
 .columna-izquierda {
-  flex: 1; /* Ocupa mitad izquierda */
+  flex: 1.4; /* Ocupa mitad izquierda */
 }
 
 .informacionlogin {
-  flex: 1; /* Mitad derecha */
+  flex: 0.9; /* Mitad derecha */
   padding: 1.5rem;
   background-color: aliceblue;
   border-radius: 0.625rem;
