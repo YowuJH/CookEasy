@@ -13,12 +13,14 @@
 /* La caja del formulario */
 .login-box {
   display: flex; /* lo hace en fila */
+  flex-direction: row; /* Lado a lado */
+  gap: 2rem; /* Separación entre columnas */
   background: white;
   padding: 2.5rem; /* 40px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
   width: 100%;
-  max-width: 25rem; /* 400px, el ancho máximo */
+  max-width: 55rem; /* 400px, el ancho máximo */
   text-align: center;
 }
 
@@ -75,11 +77,17 @@
 
 /* Mio */
 
+.columna-izquierda {
+  flex: 1; /* Ocupa mitad izquierda */
+}
+
 .informacionlogin {
-  width: 100%;
-  padding: 0.75rem;
+  flex: 1; /* Mitad derecha */
+  padding: 1.5rem;
   background-color: aliceblue;
-  border-color: black;
+  border-radius: 0.625rem;
+  text-align: left;
+  border: 0.063rem solid #ccc;
 }
 
 /* -------------------------------------- */
