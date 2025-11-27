@@ -9,7 +9,7 @@ function validarLogin(event) {
 
   // 2. Realizar la verificación
   if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
-    alert("¡Acceso concedido! Bienvenido.");
+    alert("¡Acceso concedido a CookEasy, Bienvenido!");
     // Redirige a tu página principal
     window.location.href = "landingpage.html";
   } else {
