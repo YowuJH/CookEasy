@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
 /* Contenedor principal: Centra el formulario */
 .login-container {
   display: flex;
@@ -88,6 +90,11 @@
   border-radius: 0.625rem;
   text-align: left;
   border: 0.063rem solid #ccc;
+}
+
+.informacionlogin h1 {
+  font-family: "Fredericka the Great", serif;
+  text-align: center; /*alinea texto */
 }
 
 /* -------------------------------------- */
